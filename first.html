@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <table width="100%" border="1">
+      <tr>
+        <td colspan="2" bgcolor="#4682B4" align="center">
+          <header>
+            <font color="white"> <h1>HTML5 Advanced Elements & Media</h1></font>
+            <a href="#form">Form</a>
+            <a href="#media">Media</a>
+            <a href="#details">Details</a>
+            <a href="#datatable">Data Table</a>
+          </header>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="20%" valign="top" bgcolor="#CBC3E3">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#progress">Progress</a></li>
+          </ul>
+        </td>
+        <td valign="top">
+          <h2 id="form">Registration form</h2>
+          <fieldset>
+            <legend>User Info</legend>
+            <form id="form">
+              <table>
+                <tr>
+                  <td><label for="name">Name:</label></td>
+                  <td><input type="text" id="name" /></td>
+                </tr>
+                <tr>
+                  <td><label for="email">Email:</label></td>
+                  <td>
+                    <input
+                      type="email"
+                      id="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="password">Password:</label></td>
+                  <td><input type="password" id="password" /></td>
+                </tr>
+                <tr>
+                  <td><label for="dob">DOB:</label></td>
+                  <td><input type="date" id="dob" /></td>
+                </tr>
+                <tr>
+                  <td><label for="country">Country:</label></td>
+                  <td>
+                    <input list="countries" id="country" />
+                    <datalist id="countries">
+                      <option value="Pakistan"></option>
+                      <option value="China"></option>
+                      <option value="USA"></option>
+                      <option value="UK"></option>
+                    </datalist>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="color">Fav Color:</label></td>
+                  <td><input type="color" id="color" /></td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center">
+                    <input type="submit" value="Submit" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </fieldset>
+          <hr />
+          <h2 id="media">Media Section</h2>
+          <h4>Video</h4>
+          <video width="320" height="240" controls autoplay loop>
+            <source
+              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            />
+          </video>
+          <h4>Image</h4>
+          <img
+            src="https://fastly.picsum.photos/id/322/200/200.jpg?hmac=h5_-NQtnn86YBEwVT2_4zcSeuxpCnMAdriBcZchtfas"
+            alt="Random Street"
+            width="300"
+          />
+          <h4>Audio</h4>
+          <audio controls>
+            <source
+              src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+            />
+          </audio>
+          <hr />
+          <h2 id="details">FAQ</h2>
+          <details>
+            <summary>What is this site?</summary>
+            <p>
+              This is a website that provides information about HTML5 advanced
+              elements and media and also our test
+            </p>
+          </details>
+          <hr />
+          <h2>Dialog</h2>
+          <dialog id="myDialog">
+            <p>This is a native dialog box.</p>
+            <button onclick="document.getElementById('myDialog').close()">
+              Close
+            </button>
+          </dialog>
+          <button onclick="document.getElementById('myDialog').showModal()">
+            Open Dialog
+          </button>
+          <hr />
+          <h2 id="datatable">Data Table</h2>
+          <table border="2" width="100%">
+            <thead bgcolor="#ADD8E6">
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody bgcolor="#FFFFC5">
+              <tr>
+                <td>Aisha</td>
+                <td>Pakistan</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>India</td>
+                <td>85</td>
+              </tr>
+            </tbody>
+            <tfoot bgcolor="#FFFFC5" align="center">
+              <tr>
+                <td colspan="3">End of table</td>
+              </tr>
+            </tfoot>
+          </table>
+          <hr />
+          <h2 id="progress">Progress & Meter</h2>
+          <table>
+            <tr>
+              <td><p>Form Completion:</p></td>
+              <td><progress value="70" max="100">70%</progress></td>
+            </tr>
+            <tr>
+              <td><p>Battery Level:</p></td>
+              <td><progress value="40" max="100">40%</progress></td>
+            </tr>
+          </table>
+          <hr />
+          <h2>Figure & Caption</h2>
+          <figure>
+            <img
+              src="https://fastly.picsum.photos/id/322/200/200.jpg?hmac=h5_-NQtnn86YBEwVT2_4zcSeuxpCnMAdriBcZchtfas"
+            />
+            <figcaption>Random Street</figcaption>
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#4682B4" align="center">
+          <footer>
+            <font color="white">
+              <p>&copy; 2025 HTML5 Demo, All Rights Reserved</p></font
+            >
+          </footer>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

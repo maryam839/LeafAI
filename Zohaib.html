@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Media & Advanced Elements</title>
+  </head>
+  <body>
+    <table
+      width="100%"
+      border="1"
+      cellspacing="0"
+      cellpadding="10"
+      bgcolor="#f0f8ff"
+    >
+      <tr bgcolor="#4682b4" text="#ffffff">
+        <td colspan="2" align="center">
+          <header>
+            <h1 style="color: white">🎨 HTML5 Advanced Elements & Media</h1>
+            <nav>
+              <a href="#form" style="color: yellow">Form</a> |
+              <a href="#media">Media</a> | <a href="#details">Details</a> |
+              <a href="#dialog">Dialog</a> |
+              <a href="#table">Data Table</a>
+            </nav>
+          </header>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="20%" bgcolor="#e6e6fa" valign="top">
+          <aside>
+            <h3>📌 Navigation</h3>
+            <ul>
+              <li><a href="#form">Form</a></li>
+              <li><a href="#media">Media</a></li>
+              <li><a href="#details">Details</a></li>
+              <li><a href="#dialog">Dialog</a></li>
+              <li><a href="#progress">Progress</a></li>
+            </ul>
+          </aside>
+        </td>
+
+        <td bgcolor="#ffffff" valign="top">
+          <section id="form">
+            <h2>📝 Registration Form</h2>
+            <form method="post">
+              <fieldset>
+                <legend>User Info</legend>
+                <table>
+                  <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td>
+                      <input type="text" id="name" name="name" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                      <input type="password" id="password" name="password" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" id="dob" name="dob" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                      <input list="countries" id="country" name="country" />
+                      <datalist id="countries">
+                        <option value="Pakistan"></option>
+                        <option value="USA"></option>
+                        <option value="Germany"></option>
+                      </datalist>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="color">Fav Color:</label></td>
+                    <td><input type="color" id="color" name="color" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="center">
+                      <input type="submit" value="Submit" />
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+            </form>
+          </section>
+
+          <hr />
+
+          <section id="media">
+            <h2>🎥 Media Section</h2>
+
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
+              <source
+                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+
+            <h3>Image</h3>
+            <img src="https://unsplash.it/200/200" alt="Sample Image" />
+
+            <h3>Audio</h3>
+            <audio controls>
+              <source
+                src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </section>
+
+          <hr />
+
+          <section id="details">
+            <h2>📖 FAQ</h2>
+            <details>
+              <summary>What is this site?</summary>
+              <p>
+                This is a pure HTML5 demo with no CSS, showcasing layout, forms,
+                media, and more.
+              </p>
+            </details>
+          </section>
+
+          <hr />
+
+          <section id="dialog">
+            <h2>💬 Dialog</h2>
+            <button onclick="document.getElementById('dialogBox').showModal()">
+              Open Dialog
+            </button>
+            <dialog id="dialogBox">
+              <p>This is a native dialog box.</p>
+              <form method="dialog">
+                <button>Close</button>
+              </form>
+            </dialog>
+          </section>
+
+          <hr />
+
+          <section id="table">
+            <h2>📊 Data Table</h2>
+            <table border="1" width="100%" bgcolor="#f5f5dc">
+              <thead>
+                <tr bgcolor="#add8e6">
+                  <th>Name</th>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aisha</td>
+                  <td>Pakistan</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>USA</td>
+                  <td>85</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3" align="center">End of Table</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+
+          <hr />
+
+          <section id="progress">
+            <h2>📈 Progress & Meter</h2>
+            <p>Form Completion: <progress value="75" max="100"></progress></p>
+            <p>Battery Level: <meter value="0.6">60%</meter></p>
+          </section>
+
+          <hr />
+
+          <section>
+            <h2>🖼️ Figure & Caption</h2>
+            <figure>
+              <img src="https://unsplash.it/200/200" alt="Example" />
+              <figcaption>Sample image with figcaption</figcaption>
+            </figure>
+          </section>
+        </td>
+      </tr>
+
+      <tr bgcolor="#4682b4" text="#ffffff">
+        <td colspan="2" align="center">
+          <footer>
+            <p style="color: white">
+              &copy; 2025 HTML5 Demo. All rights reserved.
+            </p>
+          </footer>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
